@@ -1,2 +1,2 @@
-# C-Course
-My first Language Practice Session
+# My First Language
+Coding Pratice Session
