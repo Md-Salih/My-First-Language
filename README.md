@@ -1,2 +1,2 @@
 # My First Language
-Coding Pratice Session
+Coding Practice Session
