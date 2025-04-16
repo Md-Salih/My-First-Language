@@ -3,6 +3,8 @@ using namespace std;
 
 int main()
 {
-    cout << "Learning C++ Language";
+    cout << "Learning C++ Language"; // single line Comment 
     return 0;
 }
+/* Multi line comments are used to 
+comment the paragraph */
