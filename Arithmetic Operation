@@ -1,7 +1,8 @@
 #include <iostream>
 using namespace std;
 
-int main() {
+int main()
+{
     int a, b;
     a = 7;
     b = 2;
@@ -9,4 +10,8 @@ int main() {
     // printing the sum of a and b
     cout << "a + b = " << (a + b) << endl;
     return 0;
+    
+    // printing the difference of a and b
+    cout << "a - b = " << (a - b) << endl;
+
 }
