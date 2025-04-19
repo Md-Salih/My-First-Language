@@ -14,4 +14,10 @@ int main()
     // printing the difference of a and b
     cout << "a - b = " << (a - b) << endl;
 
+    // printing the difference of a and b
+    cout << "a - b = " << (a - b) << endl;
+
+    // printing the product of a and b
+    cout << "a * b = " << (a * b) << endl;
+
 }
