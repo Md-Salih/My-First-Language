@@ -1,0 +1,25 @@
+Operators are used to perform operations on variables and values. C++ provides various types of operators, including:
+
+1. Arithmetic Operators:
+    - + (addition)
+    - - (subtraction)
+    - * (multiplication)
+    - / (division)
+    - % (modulus)
+2. Comparison Operators:
+    - == (equal to)
+    - != (not equal to)
+    - > (greater than)
+    - < (less than)
+    - >= (greater than or equal to)
+    - <= (less than or equal to)
+3. Logical Operators:
+    - && (logical AND)
+    - || (logical OR)
+    - ! (logical NOT)
+4. Assignment Operators:
+    - = (assignment)
+    - += (addition assignment)
+    - -= (subtraction assignment)
+    - *= (multiplication assignment)
+    - /= (division assignment)
