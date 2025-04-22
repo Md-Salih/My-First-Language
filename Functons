@@ -12,3 +12,17 @@ Functions are reusable blocks of code that perform a specific task. C++ provides
 4. Return Type:
     - The return type specifies the type of value returned by a function
 
+Example Code
+
+#include <iostream>
+
+int add(int x, int y) {
+    return x + y;
+}
+
+int main() {
+    int result = add(5, 3);
+    std::cout << "Result = " << result << std::endl;
+    return 0;
+}
+
