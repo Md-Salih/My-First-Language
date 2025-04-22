@@ -1,0 +1,14 @@
+Functions in C++
+
+Functions are reusable blocks of code that perform a specific task. C++ provides several features for working with functions:
+
+1. Function Declaration:
+    - Syntax: return-type function-name(parameters) { code }
+2. Function Call:
+    - Syntax: function-name(arguments)
+3. Function Parameters:
+    - Parameters are variables that are passed to a function
+    - Parameters can be passed by value or by reference
+4. Return Type:
+    - The return type specifies the type of value returned by a function
+
