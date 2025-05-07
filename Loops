@@ -36,3 +36,22 @@ while (i < 5) {
     i++;
 }
 
+Do-While Loop
+A do-while loop is similar to a while loop, but the code inside the loop is executed at least once before the condition is checked.
+
+
+do {
+    // code to be executed
+} while (condition);
+
+
+Example:
+
+
+int i = 0;
+do {
+    std::cout << i << std::endl;
+    i++;
+} while (i < 5);
+
+
