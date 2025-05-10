@@ -1,0 +1,15 @@
+Vectors in C++
+Vectors are dynamic arrays in C++ that can resize themselves automatically when elements are added or removed. They are part of the C++ Standard Template Library (STL) and provide a flexible way to work with collections of data.
+
+Key Features of Vectors
+- Dynamic size: Vectors can grow or shrink dynamically as elements are added or removed.
+- Random access: Vectors provide random access to elements, allowing you to access any element directly using its index.
+- Insertion and deletion: Vectors support insertion and deletion of elements at any position, including the beginning and end.
+
+Vector Operations
+- push_back(): adds an element to the end of the vector
+- insert(): inserts an element at a specified position
+- erase(): removes an element from a specified position
+- size(): returns the number of elements in the vector
+- capacity(): returns the maximum number of elements the vector can hold without resizing
+- resize(): changes the size of the vector
