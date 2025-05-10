@@ -13,3 +13,39 @@ Vector Operations
 - size(): returns the number of elements in the vector
 - capacity(): returns the maximum number of elements the vector can hold without resizing
 - resize(): changes the size of the vector
+
+Vector Example
+
+#include <iostream>
+#include <vector>
+
+int main() {
+    std::vector<int> vec = {1, 2, 3, 4, 5};
+
+    // Add an element to the end
+    vec.push_back(6);
+    std::cout << "Vector: ";
+    for (int num : vec) {
+        std::cout << num << " ";
+    }
+    std::cout << std::endl;
+
+    // Insert an element at a specified position
+    vec.insert(vec.begin() + 2, 10);
+    std::cout << "Vector after insertion: ";
+    for (int num : vec) {
+        std::cout << num << " ";
+    }
+    std::cout << std::endl;
+
+    // Remove an element from a specified position
+    vec.erase(vec.begin() + 2);
+    std::cout << "Vector after deletion: ";
+    for (int num : vec) {
+        std::cout << num << " ";
+    }
+    std::cout << std::endl;
+
+    return 0;
+}
+
