@@ -4,3 +4,8 @@ C++ is widely used for developing operating systems, device drivers, and embedde
 - Operating systems: Windows, Linux, and macOS use C++ in their core development.
 - Embedded systems: C++ is used in automotive systems, medical devices, and other embedded systems that require efficient and reliable code.
 
+2. Games and Graphics
+C++ is a popular choice for game development and graphics rendering due to its performance and control over hardware resources. Examples include:
+
+- Game engines: Many game engines, such as Unreal Engine and Unity, use C++ as a core programming language.
+- Graphics rendering: C++ is used in graphics rendering, 3D modeling, and animation.
