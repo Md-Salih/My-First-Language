@@ -1,0 +1,33 @@
+A linked list is a linear data structure where elements are not stored at contiguous memory locations. Instead, each element is a separate object, known as a node, which contains two items:
+
+1. Data: The actual data stored in the node.
+2. Next: A reference (or link) to the next node in the sequence.
+
+Key Characteristics
+1. Dynamic Memory Allocation: Linked lists use dynamic memory allocation, which means that memory is allocated or deallocated as nodes are added or removed.
+2. Non-Contiguous Memory: Unlike arrays, linked lists do not store elements in contiguous memory locations.
+3. Efficient Insertion and Deletion: Linked lists allow for efficient insertion and deletion of nodes at any position in the list.
+
+Types of Linked Lists
+1. Singly Linked List: Each node has a reference to the next node in the sequence.
+2. Doubly Linked List: Each node has references to both the previous and next nodes in the sequence.
+3. Circularly Linked List: The last node in the sequence points back to the first node, forming a circle.
+
+Advantages
+1. Efficient Insertion and Deletion: Linked lists allow for efficient insertion and deletion of nodes at any position in the list.
+2. Dynamic Memory Allocation: Linked lists use dynamic memory allocation, which means that memory is allocated or deallocated as nodes are added or removed.
+
+Disadvantages
+1. Random Access is Not Allowed: Linked lists do not allow for random access to elements, as each node can only be accessed by traversing the list from the beginning.
+2. Extra Memory for Pointers: Linked lists require extra memory to store the pointers to the next node in the sequence.
+
+Applications
+1. Database Query Results: Linked lists can be used to store the results of a database query, where each node represents a row in the result set.
+2. Browser History: Linked lists can be used to implement browser history, where each node represents a webpage visited by the user.
+3. Dynamic Memory Allocation: Linked lists are useful in situations where dynamic memory allocation is required, such as in systems with limited memory.
+
+Common Operations
+1. Insertion: Adding a new node to the list.
+2. Deletion: Removing a node from the list.
+3. Traversal: Iterating through the nodes in the list.
+4. Search: Finding a specific node in the list.
