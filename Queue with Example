@@ -1,0 +1,102 @@
+A queue is a linear data structure that follows the First-In-First-Out (FIFO) principle, meaning that the first element added to the queue will be the first one to be removed.
+
+Key Characteristics
+1. First-In-First-Out (FIFO): The first element added to the queue will be the first one to be removed.
+2. Elements are added to the end: Elements are added to the end of the queue.
+3. Elements are removed from the front: Elements are removed from the front of the queue.
+
+Basic Operations
+1. Enqueue: Adds an element to the end of the queue.
+2. Dequeue: Removes the front element from the queue.
+3. Peek (or Front): Returns the front element of the queue without removing it.
+4. IsEmpty: Checks if the queue is empty.
+5. Size: Returns the number of elements in the queue.
+
+Types of Queues
+1. Simple Queue: A basic queue that follows the FIFO principle.
+2. Circular Queue: A queue that uses a circular array to store elements, allowing the queue to wrap around to the beginning of the array when it reaches the end.
+3. Priority Queue: A queue that assigns a priority to each element, and elements are dequeued based on their priority.
+
+Advantages
+1. Efficient insertion and deletion: Queues allow for efficient insertion and deletion of elements at the end and front, respectively.
+2. Job scheduling: Queues can be used to schedule jobs or tasks in a system.
+
+Disadvantages
+1. Limited access: Only the front element of the queue can be accessed directly.
+2. Not suitable for random access: Queues are not suitable for applications that require random access to elements.
+
+Applications
+1. Job scheduling: Queues can be used to schedule jobs or tasks in a system.
+2. Print queues: Queues can be used to manage print jobs in a printer.
+3. Network protocols: Queues can be used to manage network packets in a router or switch.
+
+Example Implementation
+Here is an example implementation of a queue using an array in C++:
+
+
+#include <iostream>
+
+class Queue {
+private:
+    int* arr;
+    int front;
+    int rear;
+    int capacity;
+    int size;
+
+public:
+    Queue(int capacity) {
+        this->capacity = capacity;
+        this->front = 0;
+        this->rear = -1;
+        this->size = 0;
+        this->arr = new int[capacity];
+    }
+
+    void enqueue(int element) {
+        if (size == capacity) {
+            std::cout << "Queue overflow!" << std::endl;
+            return;
+        }
+        rear = (rear + 1) % capacity;
+        arr[rear] = element;
+        size++;
+    }
+
+    int dequeue() {
+        if (size == 0) {
+            std::cout << "Queue underflow!" << std::endl;
+            return -1;
+        }
+        int temp = arr[front];
+        front = (front + 1) % capacity;
+        size--;
+        return temp;
+    }
+
+    int peek() {
+        if (size == 0) {
+            std::cout << "Queue is empty!" << std::endl;
+            return -1;
+        }
+        return arr[front];
+    }
+
+    bool isEmpty() {
+        return size == 0;
+    }
+
+    int getSize() {
+        return size;
+    }
+};
+
+int main() {
+    Queue queue(5);
+    queue.enqueue(10);
+    queue.enqueue(20);
+    queue.enqueue(30);
+    std::cout << "Front element: " << queue.peek() << std::endl;  // Output: 10
+    std::cout << "Dequeued element: " << queue.dequeue() << std::endl;  // Output: 10
+    return 0;
+}
