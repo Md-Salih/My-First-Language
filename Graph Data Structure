@@ -1,0 +1,49 @@
+Graph
+
+A graph is a non-linear data structure consisting of nodes or vertices connected by edges. Each node may have multiple edges connected to it, and each edge may have a weight or label associated with it.
+
+Graph Terminology
+
+- Vertex (Node): A vertex or node is a point in the graph that represents an entity or object.
+- Edge: An edge is a connection between two vertices. Edges can be directed or undirected.
+- Weight: A weight is a value associated with an edge that represents the cost or distance between two vertices.
+- Neighbor: A neighbor of a vertex is another vertex that is connected to it by an edge.
+- Degree: The degree of a vertex is the number of edges connected to it.
+
+Types of Graphs
+
+- Directed Graph: A directed graph is a graph in which edges have direction. Each edge has a starting vertex (tail) and an ending vertex (head).
+- Undirected Graph: An undirected graph is a graph in which edges do not have direction.
+- Weighted Graph: A weighted graph is a graph in which edges have weights or labels associated with them.
+- Unweighted Graph: An unweighted graph is a graph in which edges do not have weights or labels.
+- Cyclic Graph: A cyclic graph is a graph that contains at least one cycle (a path that starts and ends at the same vertex).
+- Acyclic Graph: An acyclic graph is a graph that does not contain any cycles.
+
+Graph Representations
+
+Graphs can be represented in several ways:
+
+- Adjacency Matrix: An adjacency matrix is a matrix where the entry at row i and column j represents the weight of the edge between vertex i and vertex j.
+- Adjacency List: An adjacency list is a list of edges, where each edge is represented as a pair of vertices.
+
+Graph Operations
+
+- Insertion: Inserting a vertex or edge into the graph.
+- Deletion: Deleting a vertex or edge from the graph.
+- Traversal: Traversing the graph to visit all vertices or edges.
+- Search: Searching for a specific vertex or edge in the graph.
+
+Graph Algorithms
+
+- Breadth-First Search (BFS): A traversal algorithm that visits all vertices in the graph level by level.
+- Depth-First Search (DFS): A traversal algorithm that visits all vertices in the graph by exploring as far as possible along each branch before backtracking.
+- Dijkstra's Algorithm: A shortest path algorithm that finds the minimum-weight path between two vertices in a weighted graph.
+- Bellman-Ford Algorithm: A shortest path algorithm that finds the minimum-weight path from a source vertex to all other vertices in a weighted graph.
+
+Real-World Applications of Graphs
+
+- Social Networks: Graphs can be used to represent social networks, where vertices represent individuals and edges represent relationships.
+- Traffic Networks: Graphs can be used to represent traffic networks, where vertices represent intersections and edges represent roads.
+- Recommendation Systems: Graphs can be used to represent relationships between users and items in recommendation systems.
+
+In conclusion, graphs are a powerful data structure that can be used to represent complex relationships between objects. Understanding graphs and graph algorithms is essential for solving many real-world problems.
