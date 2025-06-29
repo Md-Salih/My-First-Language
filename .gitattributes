@@ -1,0 +1,13 @@
+# -------------------------------------
+# ✅ Force GitHub to detect C++ properly
+*.cpp linguist-detectable=true
+*.h linguist-detectable=true
+
+# -------------------------------------
+# ❌ Exclude documentation from language stats
+*.md linguist-documentation
+
+# ❌ Ignore generated or vendor files (if any)
+*.min.js linguist-generated
+/vendor/** linguist-vendored
+/docs/** linguist-documentation
