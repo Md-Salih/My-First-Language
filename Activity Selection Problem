@@ -1,0 +1,25 @@
+#include <iostream>
+#include <vector>
+#include <algorithm>
+using namespace std;
+
+int main(){
+    int n;
+    cout<<"Enter number of activities: ";
+    cin>>n;
+    vector<pair<int,int>> act(n);
+    cout<<"Enter start and end times:\n";
+    for(int i=0;i<n;i++) cin>>act[i].first>>act[i].second;
+
+    sort(act.begin(), act.end(), [](auto &a, auto &b){ return a.second < b.second; });
+
+    int count=1, end=act[0].second;
+    for(int i=1;i<n;i++){
+        if(act[i].first >= end){
+            count++;
+            end=act[i].second;
+        }
+    }
+
+    cout<<"Maximum activities possible: "<<count;
+}
