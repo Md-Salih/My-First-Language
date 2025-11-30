@@ -1,0 +1,18 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+    long long N, K;
+    cin >> N >> K;
+
+    long long finalIndex = K % N;
+
+    cout << "Final index: " << finalIndex << "\n";
+    cout << "Visited: ";
+
+    for(long long i = 0; i < K; i++) {
+        cout << (i % N) << " ";
+    }
+
+    return 0;
+}
